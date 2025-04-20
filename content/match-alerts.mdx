@@ -1,6 +1,7 @@
-# Configuring Alerts for your server
+# Match Alerts
 
-⚠️ Before you can receive alerts, make sure you've [linked an account](linking-accounts) to the bot.
+ >### *⚠️* Before you can receive alerts, make sure you've [linked an account](linking-accounts) to the bot.
+
 
 ### Setting a channel for match alerts
 <br/>
@@ -14,7 +15,9 @@ That's it! Once the channel is set, start playing some games and the bot will st
 <br/>
 <img src="images/alerts/alert-types.png" alt="Linking your account" width={400} height={400} />
 
-The bot allows you to configure what type of matches you'd like to receive alerts for. As of right we support a multitude of gamemodes including:
+Type `/config alerts type [game-type]` to toggle the game type you want to receive alerts for.
+
+As of right we support a multitude of gamemodes including:
 - Ranked Solo/Duo
 - Ranked Flex
 - Normal Draft
@@ -23,5 +26,11 @@ The bot allows you to configure what type of matches you'd like to receive alert
 
 > **Hint:** By default, the bot will send alerts for all game types. You can toggle them on and off using the command below.
 
-Type `/config alerts type [game-type]` to toggle the game type you want to receive alerts for.
+### Setting a channel for promotions
 <br/>
+<img src="images/alerts/promotion.png" alt="Linking your account" width={400} height={400} />
+
+By default the bot will send all promotions to your match alerts channel. 
+
+To set a channel specefically for promotions, type `/config alerts promotions [channel]`.
+
