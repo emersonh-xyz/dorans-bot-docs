@@ -3,5 +3,6 @@ export default {
   'linking-accounts': 'Linking Accounts',
   'match-alerts': 'Match Alerts',
   'daily-summaries': 'Daily Summaries',
-  'leaderboard': 'Leaderboard'
+  'leaderboard': 'Leaderboard',
+  'premium': '👑 Premium'
 }
