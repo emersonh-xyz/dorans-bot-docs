@@ -1,15 +1,18 @@
+---
+title: Linking Summoners
+---
+
 import { Gear, Bell } from 'lucide-react';
 import { Steps, Cards } from 'nextra/components'
-
+import { Callout } from 'nextra/components'
 
 # Summoner Linking
 
 Linking a Summoner is a prerequisite for using the bot. 
 
-There are two ways to link your summoner: through the bot or through the Dashboard.
+There are two ways to link your summoner: through the Dashboard or the commands.
 
-> **Warning:** During the linking process you have the option to verify your account. 
-> This is not required, but depending on a server's settings, it may be required for alerts and other features to work properly.
+<Callout>During the linking process you have the option to verify your account. This is not required, but depending on a server's settings, it may be required for alerts and other features to work properly.</Callout>
 
 ### Linking via the Dashboard
 <br/>
@@ -29,15 +32,14 @@ To unlink your account, just hit the **Gear** icon next to the account you want 
 <img src="images/linking-accounts/example-link.png" alt="Linking your account" width={800} height={800} />
 You can link your account by using the `/account link` command in any server where the bot is present. This will start the linking process, and the bot will guide you through the steps.
 
-> **Hint:** Ensure you provide a valid Riot Games account name and region when using the command. Valid usage example `/account link emerson xyz NA1`
+<Callout type='info'>Example Valid usage of the command `/account link emerson xyz NA1`.</Callout>
 
 To unlink a Riot Id from your account, you can use the `/account unlink` command in any server where the bot is present.
 
-
 ### Linking yourself to a new server
-**Note: If you're only linking your account in one server you can ignore this step.**
+<Callout type="warning">If you're only linking your account in one server you can ignore this step. </Callout>
 
-To link your Discord account to a new server with your existing Summoners you can use `/account guild bind` to connect your Discord to the server.
+If you have already linked summoners to your account, you can link yourself to a new server by using the `/account guild bind` command. This will allow you to use your existing linked accounts in the new server.
 
 You can view a full list of your connected servers from the [Dashboard](https://dorans.bot/dashboard/data-sources).
 
@@ -46,7 +48,7 @@ You can view a full list of your connected servers from the [Dashboard](https://
  <Cards.Card
  icon={<Bell/>}
  title="Configuring Match Alerts"
- href="/match-alerts"
+ href="/match_alerts"
  />
  </Cards>
 

@@ -1,8 +1,7 @@
+import { Callout } from 'nextra/components'
+
 # Match Alerts
-
- >### *⚠️* Before you can receive alerts, make sure you've [linked an account](linking-accounts) to the bot.
-
-
+ <Callout>Before you can receive alerts, make sure you've [linked an account](linking-accounts) to the bot.</Callout>
 ### Setting a channel for match alerts
 <br/>
 <img src="images/alerts/match-card.png" alt="Linking your account" width={400} height={400} />
@@ -14,6 +13,7 @@ That's it! Once the channel is set, start playing some games and the bot will st
 ### Toggling different game types
 <br/>
 <img src="images/alerts/alert-types.png" alt="Linking your account" width={400} height={400} />
+<Callout type='info'>By default, the bot will send alerts for all game types. You can toggle them on and off using the command below.</Callout>
 
 Type `/config alerts type [game-type]` to toggle the game type you want to receive alerts for.
 
@@ -24,13 +24,11 @@ As of right we support a multitude of gamemodes including:
 - ARAM
 - URF
 
-> **Hint:** By default, the bot will send alerts for all game types. You can toggle them on and off using the command below.
-
 ### Setting a channel for promotions
 <br/>
 <img src="images/alerts/promotion.png" alt="Linking your account" width={400} height={400} />
 
-By default the bot will send all promotions to your match alerts channel. 
+<Callout type="info">By default, the bot will send all promotions to your match alerts channel.</Callout>
 
-To set a channel specefically for promotions, type `/config alerts promotions [channel]`.
+To set a channel specefically for promotion alerts, type `/config alerts promotions [channel]`.
 
